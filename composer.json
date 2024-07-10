@@ -1,0 +1,35 @@
+{
+    "name": "leetcode/leetcode",
+    "description": "leetcode",
+    "license": "MIT",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.2.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.16",
+        "phpunit/phpunit": "^11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeetCode\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "scripts": {
+        "lint": [
+            "@php vendor/bin/pint"
+        ],
+        "test": "@php vendor/bin/phpunit"
+    }
+}
